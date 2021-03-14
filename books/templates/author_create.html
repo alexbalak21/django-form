@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}New Author{% endblock %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {% for field in form %}
+    {{ field.label_tag }}{{ field }}
+    <br>
+    {% endfor %}
+    <button type="submit">ADD</button>
+</form>
+
+{% endblock content %}

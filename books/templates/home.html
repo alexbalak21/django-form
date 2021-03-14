@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+<h3>Books</h3>
+<a href="{% url 'books:authors' %}"><button>Authors</button></a>
+<a href=""><button>MODIFY</button></a>
+
+{% endblock %}
